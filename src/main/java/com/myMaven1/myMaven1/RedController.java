@@ -1,8 +1,10 @@
 package com.myMaven1.myMaven1;
 
-public class MyController {
+public class RedController {
 
 	public static void main(String[] args) {
-		System.out.println("2222 555");
+		// TODO Auto-generated method stub
+
 	}
+
 }
