@@ -1,19 +1,29 @@
 package com.myMaven1.myMaven1;
 
 import java.util.Date;
-
+import java.text.SimpleDateFormat;
 /**
  * Hello world!
- *
+ *22
  */
 public class App 
 {
-    @SuppressWarnings("deprecation")
-	public static void main( String[] args )
-    {
-        System.out.println( "Hello World! 2222 666" );
-        Date date = new Date();
-        int hours = date.getHours();
-        System.out.println(hours);
-    }
+	// TaskUnit
+	
+	
+	static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	public static void main(String[] args) throws Exception {
+		Date now = new Date();
+		testGetHours(now);
+		
+		
+	}
+
+	private static void testGetHours(Date now) throws Exception{
+		System.out.println("now1 : " + now.getTime());
+
+
+		Date parse = sdf.parse("2017-06-18 00:00:00");
+		System.out.println("not parse: " + parse.getTime() + " " + parse.getHours());
+	}
 }
