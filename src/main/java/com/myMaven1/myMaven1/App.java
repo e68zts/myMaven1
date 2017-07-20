@@ -1,34 +1,29 @@
 package com.myMaven1.myMaven1;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
-
+import java.text.SimpleDateFormat;
 /**
  * Hello world!
- * yellow 提交1
+ * 测试3提交 yellow
  */
 public class App 
 {
-    public static void main( String[] args ) throws ParseException
-    {
-        System.out.println( "Hello World! 2222 " );
-        
-        Date now = new Date();
-        long nowTime = now.getTime();
-        System.out.println("now: "+nowTime);
-        
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        
-        Date parse = sdf.parse("2017-07-18 00:00:00");
-        System.out.println("not now: "+parse.getTime() + " "+parse.getHours());
-        //TaskUnit
-        
-//        System.out.println( "-----------分割线----------" );
-//        Date date = new Date();
-//        int hours = date.getHours();
-//        System.out.println(hours + " "+(24-15));
-//        
-//        System.out.println(new Date(parse.getTime()).getHours() +" "+((24-10)));
-    }
+	// TaskUnit
+	
+	
+	static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	public static void main(String[] args) throws Exception {
+		Date now = new Date();
+		testGetHours(now);
+		
+		
+	}
+
+	private static void testGetHours(Date now) throws Exception{
+		System.out.println("now1 : " + now.getTime());
+
+
+		Date parse = sdf.parse("2017-06-18 00:00:00");
+		System.out.println("not parse: " + parse.getTime() + " " + parse.getHours());
+	}
 }
