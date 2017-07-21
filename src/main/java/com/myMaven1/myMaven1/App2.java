@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * Hello world!
  * this is App2
- * d
+ * dd
  * 
  */
 public class App2 {
